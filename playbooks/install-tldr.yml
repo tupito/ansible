@@ -1,0 +1,14 @@
+# 20201205
+# tested: ubuntu20.04 (vagrantbox)
+# ansible 2.9.6
+---
+
+- name: Ensure tldr installed
+  hosts: localhost
+  tags: ['install-tldr']
+  tasks:
+  - name: install tldr
+    apt:
+      name: tldr
+      state: latest
+    become: yes
