@@ -1,18 +1,20 @@
 #############################################
-# ubuntu20.04 + install ansible
+# centos8 + install ansible
 #############################################
 
 Vagrant.configure("2") do |config|
 
   # get box
-  config.vm.define "ubuntufocal" do |ubuntufocal|
-    ubuntufocal.vm.box = "ubuntu/focal64"
+  config.vm.define "centos8" do |centos8|
+    centos8.vm.box = "centos/8"
   end
 
   # install ansible
   config.vm.provision "shell", inline: <<-SHELL
-    apt update &&
-    apt install ansible -y &&
+    sudo dnf install epel-release -y &&
+    sudo dnf makecache &&
+    sudo dnf install ansible -y &&    
     ansible --version
     SHELL
+
 end
