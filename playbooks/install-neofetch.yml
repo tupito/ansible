@@ -1,0 +1,43 @@
+# tested: ubuntu20.04 (vagrantbox)
+# ansible 2.9.6
+---
+
+- name: Install and configure neofetch
+  hosts: localhost
+  tasks:
+
+  - name: Ensure neofetch is installed
+    apt:
+      name: neofetch
+      state: latest
+    become: yes
+
+  - name: Run neofetch to create config file template
+    command: neofetch
+
+  - name: Ensure custom configs uncommented for neofetch
+    lineinfile:
+      path: ~/.config/neofetch/config.conf
+      regexp: "{{ item.regexp }}"
+      line: "{{ item.line }}"
+    with_items: # todo: poor implementation
+      - { regexp: '    # info "GPU Driver" gpu_driver  # Linux/macOS only', line: '    info "GPU Driver" gpu_driver  # Linux/macOS only' }
+      - { regexp: '    # info "CPU Usage" cpu_usage', line: '    info "CPU Usage" cpu_usage'}
+      - { regexp: '    # info "Disk" disk', line: '    info "Disk" disk'}
+      - { regexp: '    # info "Local IP" local_ip', line: '    info "Local IP" local_ip'}
+      - { regexp: '    # info "Public IP" public_ip', line: '    info "Public IP" public_ip'}
+      - { regexp: '    # info "Users" users', line: '    info "Users" users'}        
+      - { regexp: '    # info "Locale" locale  # This only works on glibc systems.', line: '    info "Locale" locale  # This only works on glibc systems.'}
+
+  - name: Ensure neofetch shows info at login with bash
+    blockinfile:
+      path: ~/.bashrc
+      block: |
+        # Show system information at login (neofetch)
+        if [ -t 0 ]; then
+            if type -p "neofetch" > /dev/null; then
+                neofetch
+            else
+                echo "Warning: neofetch was called, but it's not installed."
+            fi
+        fi
