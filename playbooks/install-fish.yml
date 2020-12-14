@@ -1,0 +1,37 @@
+# tested: ubuntu20.04 (vagrantbox)
+# ansible 2.9.6
+---
+
+- name: Install and configure fish
+  hosts: localhost
+  tasks:
+
+  - name: Ensure fish is installed
+    apt:
+      name: fish
+      state: latest
+    become: yes
+
+  - name: Run fish to create config file folder
+    command: fish
+
+  - name: Check if ~/.config/fish/config.fish exists
+    stat:
+      path: ~/.config/fish/config.fish
+    register: fishconfig     
+
+  - name: Touch a config file if ~/.config/fish/config.fish doesn't exist
+    file:
+      path: ~/.config/fish/config.fish
+      state: touch
+      mode: u=rw,g=r,o=r
+    when: fishconfig.stat.exists == false
+
+  - name: Ensure neofetch shows info at login with fish
+    blockinfile:
+      path: ~/.config/fish/config.fish
+      block: |
+        # Show system information at login (neofetch)
+        if type -q $neofetch
+          neofetch
+        end
