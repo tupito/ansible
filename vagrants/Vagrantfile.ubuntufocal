@@ -4,9 +4,10 @@
 
 Vagrant.configure("2") do |config|
 
-  # get box
+  # box
   config.vm.define "ubuntufocal" do |ubuntufocal|
-    ubuntufocal.vm.box = "ubuntu/focal64"
+    ubuntufocal.vm.box = "generic/ubuntu2004"                     # official "ubuntu/focal64" had issues after box update with wsl
+    ubuntufocal.vm.synced_folder '.', '/vagrant', disabled: true  # wsl fix
   end
 
   # install ansible
@@ -15,4 +16,5 @@ Vagrant.configure("2") do |config|
     apt install ansible -y &&
     ansible --version
     SHELL
+
 end
