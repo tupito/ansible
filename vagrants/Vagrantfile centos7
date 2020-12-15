@@ -1,0 +1,19 @@
+#############################################
+# centos7 + install ansible
+#############################################
+
+Vagrant.configure("2") do |config|
+
+  # box
+  config.vm.define "centos7" do |centos7|
+    centos7.vm.box = "generic/centos7"
+  end
+
+  # install ansible
+  config.vm.provision "shell", inline: <<-SHELL
+    yum clean metadata &&
+    yum install ansible -y &&
+    ansible --version
+    SHELL
+
+end  
