@@ -1,4 +1,4 @@
-# tested: ubuntu20.04 (vagrantbox)
+# tested: ubuntu20.04 (vagrantbox, wsl)
 # ansible 2.9.6
 ---
 
