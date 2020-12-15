@@ -12,7 +12,7 @@
       state: latest
     become: yes
 
-  - name: Run neofetch to create config file template
+  - name: Run neofetch to create config file template # todo: condition
     command: neofetch
 
   - name: Ensure custom configs uncommented for neofetch
