@@ -33,6 +33,4 @@
       path: ~/.config/fish/config.fish
       block: |
         # Show system information at login (neofetch)
-        if type -q $neofetch
           neofetch
-        end
