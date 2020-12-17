@@ -2,12 +2,16 @@
   hosts: localhost
   tasks:
 
-  - name: Update and upgrade apt packages
+  - name: Update package lists "sudo apt update"
     become: true
     apt:
-      upgrade: yes
       update_cache: yes
-      cache_valid_time: 86400 #One day
+
+  - name: Update all packages to their latest version "sudo apt upgrade"
+    become: true
+    apt:
+      name: "*"
+      state: latest
 
   - name: Check if a reboot is needed (Debian and Ubuntu)
     register: reboot_required_file
