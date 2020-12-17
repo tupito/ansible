@@ -1,18 +1,3 @@
 ---
-- name: install bat
-  import_playbook: install-bat.yml
-
-- name: install cheat
-  import_playbook: install-cheat.yml
-
-- name: install fish
-  import_playbook: install-fish.yml
-
-- name: install keychain
-  import_playbook: install-keychain.yml
-
-- name: install neofetch
-  import_playbook: install-neofetch.yml
-
-- name: install tldr
-  import_playbook: install-tldr.yml
+- name: install tools
+  import_playbook: tools/main.yml
