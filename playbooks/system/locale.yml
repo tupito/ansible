@@ -12,25 +12,27 @@
     become: yes
 
   - name: Ensure fi_FI.UTF-8 locale exists
+    become: yes
     locale_gen:
       name: fi_FI.UTF-8
       state: present
 
   - name: Ensure en_US.UTF-8 locale exists
+    become: yes
     locale_gen:
       name: en_US.UTF-8
       state: present    
 
   - name: Copy locale template
+    become: yes
     copy:
       src: ./locale
       dest: /etc/default/locale
       follow: yes # overrides
-    become: yes
 
-  - name: Reload /etc/default/locale  
-    shell: . /etc/default/locale
+  - name: Reload /etc/default/locale
     become: yes
+    shell: . /etc/default/locale
 
   - debug:
       msg: "NOTE: In Pop!_OS 20.04 go Language Support->Regional Formats-> Language-> 'Apply System-Wide'"
