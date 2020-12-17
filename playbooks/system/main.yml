@@ -1,3 +1,6 @@
 ---
+- name: setup localization
+  import_playbook: locale.yml
+
 - name: setup ufw
   import_playbook: ufw.yml

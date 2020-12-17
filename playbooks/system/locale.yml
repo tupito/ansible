@@ -1,0 +1,36 @@
+---
+
+- name: Fix locales
+  hosts: localhost
+  tasks:
+
+  - name: Change repository source mirrors to Finland
+    replace:
+      path: /etc/apt/sources.list
+      regexp: '/us.'
+      replace: '/fi.'
+    become: yes
+
+  - name: Ensure fi_FI.UTF-8 locale exists
+    locale_gen:
+      name: fi_FI.UTF-8
+      state: present
+
+  - name: Ensure en_US.UTF-8 locale exists
+    locale_gen:
+      name: en_US.UTF-8
+      state: present    
+
+  - name: Copy locale template
+    copy:
+      src: ./locale
+      dest: /etc/default/locale
+      follow: yes # overrides
+    become: yes
+
+  - name: Reload /etc/default/locale  
+    shell: . /etc/default/locale
+    become: yes
+
+  - debug:
+      msg: "NOTE: In Pop!_OS 20.04 go Language Support->Regional Formats-> Language-> 'Apply System-Wide'"
