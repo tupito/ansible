@@ -1,5 +1,8 @@
 # localhost playbooks
 ```bash
+# run all playbooks
+ansible-playbook main.yml
+
 # testbox, no pwd, more -vvvv == more debug info
 ansible-playbook <playbook>.yml -v
 
