@@ -1,5 +1,5 @@
-# 20201212
-# tested: pop-os20.04
+# 20201217
+# tested: pop-os20.04, centos7
 # ansible 2.9.6
 ---
 
@@ -17,4 +17,16 @@
 
     - name: Display kernel version
       debug:
-        var: ansible_facts['kernel']    
+        var: ansible_facts['kernel']
+        
+    - name: Display OS family
+      debug:
+        var: ansible_facts['os_family']          
+        
+    - name: Display distribution
+      debug:
+        var: ansible_facts['distribution']
+
+    - name: Display distribution major version
+      debug:
+        var: ansible_facts['distribution_major_version']      
