@@ -1,3 +1,6 @@
 ---
+- name: setup system
+  import_playbook: system/main.yml
+
 - name: install tools
   import_playbook: tools/main.yml

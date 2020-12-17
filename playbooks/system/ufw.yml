@@ -1,0 +1,10 @@
+---
+
+- name: Setup ufw
+  hosts: localhost
+  tasks:
+
+  - name: Enable ufw with default settings
+    ufw:
+      state: enabled
+    become: yes
