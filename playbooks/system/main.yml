@@ -4,3 +4,6 @@
 
 - name: setup ufw
   import_playbook: ufw.yml
+
+- name: update packages
+  import_playbook: update.yml
