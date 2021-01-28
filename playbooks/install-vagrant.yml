@@ -1,0 +1,45 @@
+# 20201209
+# tested: ubuntu20.04 (wsl)
+# ansible 2.9.6
+
+# ubuntu install (= no wsl configs)
+# ansible-playbook install-vagrant.yml --tags ubuntu -vv
+
+# wsl install
+# ansible-playbook install-vagrant.yml --tags wsl -vv
+# ansible-playbook install-vagrant.yml -vv
+---
+
+- name: Install Vagrant
+  hosts: localhost
+  vars:
+    win_username: 'example'
+    win_virtualbox: '/mnt/c/Program Files/Oracle/VirtualBox'
+    win_vagrant_home: '/mnt/c/Users/{{ win_username }}/vagrant'
+  tasks:
+
+  - name: Ensure vagrant latest version is installed
+    tags: ['ubuntu', 'wsl']
+    apt:
+      name: vagrant
+      state: latest
+    become: yes
+
+  - name: Ensure win_username changed
+    tags: ['wsl']
+    assert:
+      that:
+        - win_username != 'example'
+      fail_msg: "please change 'win_username' var in playbook"
+
+  - name: Ensure Vagrant WSL config lines are in .bashrc
+    tags: ['wsl']
+    blockinfile:
+      path: ~/.bashrc
+      block: |
+        # vagrant config for wsl
+        # https://eloysalamanca.es/wsl/how-to-install-vagrant-and-virtualbox-on-ubuntu-from-windows-subsystem-linux/
+        # https://www.vagrantup.com/docs/other/wsl
+        export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+        export PATH="$PATH:{{ win_virtualbox }}"
+        export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="{{ win_vagrant_home }}"
