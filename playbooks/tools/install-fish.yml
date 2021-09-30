@@ -3,7 +3,7 @@
 # ansible 2.9.6
 ---
 
-- name: Install and configure fish
+- name: Install and configure fish (apt)
   hosts: localhost
   tasks:
 
@@ -31,6 +31,9 @@
   - name: Ensure neofetch shows info at login with fish
     blockinfile:
       path: ~/.config/fish/config.fish
+      marker_begin: "BEGIN neofetch"
+      marker_end: "END neofetch"
+      marker: "# {mark} ANSIBLE MANAGED BLOCK "
       block: |
         # Show system information at login (neofetch)
           neofetch

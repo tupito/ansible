@@ -36,6 +36,9 @@
     tags: ['wsl']
     blockinfile:
       path: ~/.bashrc
+      marker_begin: "BEGIN vagrant wsl"
+      marker_end: "END vagrant wsl"
+      marker: "# {mark} ANSIBLE MANAGED BLOCK "
       block: |
         # vagrant config for wsl
         # https://eloysalamanca.es/wsl/how-to-install-vagrant-and-virtualbox-on-ubuntu-from-windows-subsystem-linux/

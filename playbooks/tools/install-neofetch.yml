@@ -2,7 +2,7 @@
 # ansible 2.9.6
 ---
 
-- name: Install and configure neofetch
+- name: Install and configure neofetch (apt)
   hosts: localhost
   tasks:
 
@@ -32,6 +32,9 @@
   - name: Ensure neofetch shows info at login with bash
     blockinfile:
       path: ~/.bashrc
+      marker_begin: "BEGIN neofetch"
+      marker_end: "END neofetch"
+      marker: "# {mark} ANSIBLE MANAGED BLOCK "
       block: |
         # Show system information at login (neofetch)
         if [ -t 0 ]; then
