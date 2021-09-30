@@ -3,7 +3,7 @@
 # ansible 2.9.6
 ---
 
-- name: Ensure cheat is installed
+- name: Ensure cheat is installed (github)
   hosts: localhost
   tags: ['download-cheat']
   tasks:

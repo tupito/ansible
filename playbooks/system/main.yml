@@ -1,6 +1,6 @@
 ---
-- name: setup localization
-  import_playbook: locale.yml
+# TODO: SET HOSTNAME
+# TODO: git config name + email
 
 - name: setup ufw
   import_playbook: ufw.yml
