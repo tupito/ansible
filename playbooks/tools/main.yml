@@ -16,3 +16,8 @@
 
 - name: install tldr
   import_playbook: install-tldr.yml
+
+- name: install vim
+  import_playbook: install-vim.yml  
+
+# TODO: install snapd + vscode
