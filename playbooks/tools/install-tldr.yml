@@ -3,7 +3,7 @@
 # ansible 2.9.6
 ---
 
-- name: Ensure tldr installed
+- name: Ensure tldr installed (apt)
   hosts: localhost
   tags: ['install-tldr']
   tasks:
@@ -12,3 +12,6 @@
       name: tldr
       state: latest
     become: yes
+
+  - name: Update offline cache for tldr pages
+    command: tldr -u 
