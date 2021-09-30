@@ -1,0 +1,7 @@
+---
+- name: TODO
+  hosts: localhost
+  tasks:
+
+  - debug:
+      msg: "TODO: run gnome-language-selector to fix locales on popos"  
