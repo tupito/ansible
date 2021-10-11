@@ -1,0 +1,19 @@
+# 20211010
+# tested popos21.04
+
+---
+
+- name: Generate SSH-key
+  hosts: localhost
+  
+  vars:
+    ssh_key_filename: id_ed25519
+  
+  tasks:
+
+  - name: Generate SSH-key (ed25519)
+    openssh_keypair: # https://docs.ansible.com/ansible/2.9_ja/modules/openssh_keypair_module.html
+      path: "~/.ssh/{{ssh_key_filename}}"
+      type: ed25519
+      state: present
+      force: no     # Should the key be regenerated even if it already exists

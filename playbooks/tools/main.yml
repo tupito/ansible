@@ -18,8 +18,10 @@
   import_playbook: install-tldr.yml
 
 - name: install vim
-  import_playbook: install-vim.yml  
+  import_playbook: install-vim.yml
+
+- name: generate ssh-key (doesn't overwrite if exists)
+  import_playbook: generate-ssh-key.yml    
 
 # TODO: install snapd + vscode
-# TODO: ssh-keygen -t ed25519
 # TODO: add .gitconfig
