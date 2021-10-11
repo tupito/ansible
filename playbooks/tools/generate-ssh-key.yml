@@ -8,6 +8,7 @@
   
   vars:
     ssh_key_filename: id_ed25519
+    pubkey_comment: tt@desktop
   
   tasks:
 
@@ -16,4 +17,5 @@
       path: "~/.ssh/{{ssh_key_filename}}"
       type: ed25519
       state: present
+      comment: "{{pubkey_comment}}"
       force: no     # Should the key be regenerated even if it already exists
