@@ -1,0 +1,13 @@
+#20201012
+
+---
+
+- name: Ensure tmux installed (apt)
+  hosts: localhost
+  tasks:
+
+  - name: install tmux
+    apt:
+      name: tmux
+      state: latest
+    become: yes

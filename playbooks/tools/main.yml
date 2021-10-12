@@ -23,5 +23,5 @@
 - name: generate ssh-key (doesn't overwrite if exists)
   import_playbook: generate-ssh-key.yml    
 
-# TODO: install snapd + vscode
-# TODO: add .gitconfig
+- name: install tmux
+  import_playbook: install-tmux.yml
