@@ -1,7 +1,4 @@
 ---
-# TODO: SET HOSTNAME
-# TODO: git config name + email
-
 - name: setup ufw
   import_playbook: ufw.yml
 
