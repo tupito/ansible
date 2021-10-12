@@ -6,4 +6,7 @@
   import_playbook: update.yml
 
 - name: setup .gitconfig
-  import_playbook: gitconfig.yml  
+  import_playbook: gitconfig.yml
+
+- name: set hostname
+  import_playbook: hostname.yml    

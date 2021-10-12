@@ -1,0 +1,11 @@
+#20211012
+
+---
+
+- name: Set a hostname
+  hosts: localhost
+  tasks:
+
+  - name: Set a hostname
+    ansible.builtin.hostname: # "ansible-doc hostname"
+      name: tt-desktop
