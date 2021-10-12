@@ -12,6 +12,14 @@
   
   tasks:
 
+  - name: Add .ssh directory
+    file:
+      path=/home/tt/.ssh
+      state=directory
+      mode=0700
+      owner=tt
+      group=tt
+
   - name: Generate SSH-key (ed25519)
     openssh_keypair: # https://docs.ansible.com/ansible/2.9_ja/modules/openssh_keypair_module.html
       path: "~/.ssh/{{ssh_key_filename}}"
