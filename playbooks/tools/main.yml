@@ -31,3 +31,6 @@
 
 - name: install vscode
   import_playbook: install-vscode-snapd.yml  
+
+- name: install keepassxc
+  import_playbook: install-keepassxc.yml    
