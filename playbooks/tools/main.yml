@@ -33,4 +33,10 @@
   import_playbook: install-vscode-snapd.yml  
 
 - name: install keepassxc
-  import_playbook: install-keepassxc.yml    
+  import_playbook: install-keepassxc.yml
+
+- name: install terminator
+  import_playbook: install-terminator.yml   
+
+- name: install htop
+  import_playbook: install-htop.yml     
