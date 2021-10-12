@@ -20,3 +20,9 @@ gnome-language-selector
 #TODO: add .gitconfig name + email
 #TODO: install snapd + vscode
 ```
+
+## dual boot
+12.10.2021
+
+https://support.system76.com/articles/bootloader/
+https://github.com/spxak1/weywot/blob/main/Pop_OS_Dual_Boot.md
