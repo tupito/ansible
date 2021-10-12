@@ -17,8 +17,6 @@ gnome-language-selector
 
 ```bash
 #TODO: set hostname
-#TODO: add .gitconfig name + email
-#TODO: install snapd + vscode
 ```
 
 ## dual boot

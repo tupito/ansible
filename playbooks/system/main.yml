@@ -4,3 +4,6 @@
 
 - name: update packages
   import_playbook: update.yml
+
+- name: setup .gitconfig
+  import_playbook: gitconfig.yml  

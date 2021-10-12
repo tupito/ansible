@@ -1,0 +1,19 @@
+#20211012
+
+---
+
+- name: Setup ~/.gitconfig
+  hosts: localhost
+  tasks:
+
+  - name: setup .gitconfig user.email 
+    git_config: # https://docs.ansible.com/ansible/2.3/git_config_module.html
+      name: user.email
+      value: "tomi.tupiini@gmail.com"
+      scope: global
+    
+  - name: setup .gitconfig user.name 
+    git_config:
+      name: user.name
+      value: "Tomi Tupiini"
+      scope: global    
