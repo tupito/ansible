@@ -10,3 +10,6 @@
 
 - name: set hostname
   import_playbook: hostname.yml    
+
+- name: remove obsolete packages
+  import_playbook: remove-obsole-packages.yml  
