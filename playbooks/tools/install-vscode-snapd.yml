@@ -1,0 +1,13 @@
+#20201012
+
+---
+
+- name: Ensure vscode installed (snap)
+  hosts: localhost
+  tasks:
+
+  # Install a snap with classic confinement
+  - name: Install "vscode" with option --classic
+    snap: # https://docs.ansible.com/ansible/2.9_ja/modules/snap_module.html
+      name: code
+      classic: yes
