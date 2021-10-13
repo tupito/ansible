@@ -1,0 +1,13 @@
+#20211013
+
+---
+
+- name: Ensure tree installed (apt)
+  hosts: localhost
+  tasks:
+
+  - name: install tree
+    apt:
+      name: tree
+      state: latest
+    become: yes
