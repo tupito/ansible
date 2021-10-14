@@ -8,6 +8,7 @@
 
   # Install a snap with classic confinement
   - name: Install "vscode" with option --classic
+    become: true
     snap: # https://docs.ansible.com/ansible/2.9_ja/modules/snap_module.html
       name: code
       classic: yes
