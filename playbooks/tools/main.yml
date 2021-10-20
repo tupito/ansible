@@ -40,3 +40,6 @@
 
 - name: install htop
   import_playbook: install-htop.yml     
+
+- name: install duplicity
+  import_playbook: install-duplicity.yml       
