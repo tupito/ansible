@@ -46,7 +46,8 @@ gnome-language-selector
 ## TODO: [] authorize github access key
 
 # optimization:
-## TODO: [] refactor all apt-installs in one module call
+## TODO: [] refactor all apt installs in one module call
+## TODO: [] refactor all snap installs in one module call
 
 # longterm
 ## TODO: [] refactor to ansible role
@@ -64,3 +65,10 @@ gnome-language-selector
 https://support.system76.com/articles/bootloader/
 
 https://github.com/spxak1/weywot/blob/main/Pop_OS_Dual_Boot.md
+
+## checklist before new os-installation
+
+30.12.2021
+
+* [] git: all local commits pushed
+* [] backups
