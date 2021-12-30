@@ -28,6 +28,7 @@ gnome-language-selector
 
 ```bash
 # OS-installation:
+## TODO: [] fix umask values, https://www.computernetworkingnotes.com/linux-tutorials/how-to-change-default-umask-permission-in-linux.html
 ## TODO: [] Repair boot-boader, check dualboot links
 ## TODO: [] OS settings: settings -> desktop -> general -> show maximize button
 ## TODO: [] OS settings: settings -> desktop -> dock -> dock size small
@@ -43,6 +44,7 @@ gnome-language-selector
 ## TODO: [] vscode-plugins
 
 # misc
+## TODO: [] restore rsync backups
 ## TODO: [] authorize github access key
 
 # optimization/refactoring:
@@ -53,6 +55,7 @@ gnome-language-selector
 # longterm
 ## TODO: [] refactor to ansible role
 ## TODO: [] vars: hostname, ssh-key comment, gitconfig, create_ssh_key_only_if_doesnt_exist
+## TODO: [] tests for configurations
 ## TODO: [] solve last modified date issue with git + rsync-backups
 
 # NOT GOING TO FIX:
