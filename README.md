@@ -45,9 +45,10 @@ gnome-language-selector
 # misc
 ## TODO: [] authorize github access key
 
-# optimization:
+# optimization/refactoring:
 ## TODO: [] refactor all apt installs in one module call
 ## TODO: [] refactor all snap installs in one module call
+## TODO: [] refactor all tasks to "ensure something..." form
 
 # longterm
 ## TODO: [] refactor to ansible role
