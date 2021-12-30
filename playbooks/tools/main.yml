@@ -32,6 +32,9 @@
 - name: install vscode
   import_playbook: install-vscode-snapd.yml  
 
+- name: install postman
+  import_playbook: install-postman-snapd.yml    
+
 - name: install keepassxc
   import_playbook: install-keepassxc.yml
 
@@ -42,4 +45,7 @@
   import_playbook: install-htop.yml     
 
 - name: install duplicity
-  import_playbook: install-duplicity.yml       
+  import_playbook: install-duplicity.yml
+
+- name: install tree
+  import_playbook: install-tree.yml   

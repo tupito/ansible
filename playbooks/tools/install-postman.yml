@@ -1,0 +1,13 @@
+#20211201
+
+---
+
+- name: Ensure postman installed (snap)
+  hosts: localhost
+  tasks:
+
+  # Install a snap with classic confinement
+  - name: Install postman
+    become: true
+    snap: # https://docs.ansible.com/ansible/2.9_ja/modules/snap_module.html
+      name: postman
