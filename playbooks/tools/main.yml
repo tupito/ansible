@@ -48,4 +48,7 @@
   import_playbook: install-duplicity.yml
 
 - name: install tree
-  import_playbook: install-tree.yml   
+  import_playbook: install-tree.yml
+
+- name: install brave-browser
+  import_playbook: install-brave-browser.yml     
