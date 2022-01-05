@@ -1,0 +1,30 @@
+# 20220105
+# tested, working: popos 21.10
+# ansible 2.10.8
+---
+
+- name: Install docker-compose # https://docs.docker.com/compose/install/
+  hosts: localhost
+  tasks:
+
+  - name: get docker-compose from github
+    become: true
+    get_url:
+      url: https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-linux-x86_64
+      dest: /usr/local/bin/docker-compose
+      mode: '0755'
+
+  - name: create symlink for docker-compose
+    become: true
+    ansible.builtin.file:
+      src: /usr/local/bin/docker-compose
+      dest: /usr/bin/docker-compose
+      state: link
+  
+  - name: Get current docker-compose version
+    command: docker-compose --version
+    register: dockerComposeVersion
+
+  - name: Print docker-compose version
+    debug:
+      msg: "{{ dockerComposeVersion.stdout }} installed"
