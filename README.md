@@ -36,10 +36,11 @@ gnome-language-selector
 ## TODO: [] OS settings: settings -> desktop -> background
 
 # packages
-## TODO: [] install docker-ce and docker-compose
+## TODO: [] install docker-compose
+## TODO: [] install virtualbox
+## TODO: [] install vivaldi
 
 # plugins
-## TODO: [] install brave-browser
 ## TODO: [] browser-plugins (brave, firefox)
 ## TODO: [] vscode-plugins
 
