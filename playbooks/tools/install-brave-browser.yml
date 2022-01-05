@@ -16,19 +16,19 @@
       state: latest
       update_cache: true
 
-  - name: Get keyring file
+  - name: ensure brave-browser GPG key added
     become: true
-    ansible.builtin.get_url:
+    apt_key:
       url: https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-      dest: "/usr/share/keyrings/brave-browser-archive-keyring.gpg"
+      keyring: /usr/share/keyrings/brave-browser-archive-keyring.gpg
+      state: present
 
-
-  - name: Add Brave repository to list of repositories
-    ansible.builtin.shell: |
-      set -o pipefail
-      echo 'deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main' |sudo tee -a /etc/apt/sources.list.d/brave-browser-release.list
-    args:
-      executable: /bin/bash
+  - name: ensure brave-browser apt repository added
+    become: true
+    apt_repository:
+      repo: "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
+      state: present
+      update_cache: yes          
 
   - name: ensure brave-browser latest version installed
     become: true  
