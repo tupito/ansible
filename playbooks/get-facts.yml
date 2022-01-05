@@ -30,3 +30,7 @@
     - name: Display distribution major version
       debug:
         var: ansible_facts['distribution_major_version']      
+
+    - name: distribution_release
+      debug:
+        var: ansible_facts['distribution_release']    
