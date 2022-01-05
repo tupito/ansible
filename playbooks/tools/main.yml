@@ -51,4 +51,7 @@
   import_playbook: install-tree.yml
 
 - name: install brave-browser
-  import_playbook: install-brave-browser.yml     
+  import_playbook: install-brave-browser.yml
+
+- name: install docker-ce
+  import_playbook: install-docker-ce.yml
