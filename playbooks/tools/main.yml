@@ -58,3 +58,6 @@
 
 - name: install docker-compose
   import_playbook: install-docker-compose.yml  
+
+- name: install virtualbox
+  import_playbook: install-virtualbox.yml

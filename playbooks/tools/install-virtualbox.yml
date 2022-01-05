@@ -1,0 +1,14 @@
+# 20220105
+# tested, working: popos 21.10
+# ansible 2.10.8
+---
+
+- name: Install virtualbox (apt)
+  hosts: localhost
+  tasks:
+
+  - name: Ensure latest virtualbox (apt) is installed
+    apt:
+      name: virtualbox
+      state: latest
+    become: yes

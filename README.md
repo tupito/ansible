@@ -36,7 +36,6 @@ gnome-language-selector
 ## TODO: [] OS settings: settings -> desktop -> background
 
 # packages
-## TODO: [] install virtualbox
 ## TODO: [] install vivaldi
 
 # plugins
