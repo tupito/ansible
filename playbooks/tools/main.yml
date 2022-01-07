@@ -64,3 +64,6 @@
 
 - name: install npm
   import_playbook: install-npm.yml  
+
+- name: install chromium-browser
+  import_playbook: install-chromium-browser.yml    
