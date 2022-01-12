@@ -1,0 +1,30 @@
+# 20221201
+# tested popos 21.10
+# ansible 2.10.8
+---
+
+- name: Install vscode extensions
+  hosts: localhost
+  tasks:
+
+  - name: Install vscode extensions "code --install-extension <id>" #FIXME: not idempotent
+    command: code --install-extension {{ item }}
+    loop:
+      - eamodio.gitlens
+      - mechatroner.rainbow-csv
+      - ms-python.python      
+      - ms-python.vscode-pylance
+      - ms-toolsai.jupyter
+      - ms-vscode.powershell
+      - ms-vscode-remote.remote-wsl      
+      - dbaeumer.vscode-eslint
+      - esbenp.prettier-vscode
+      - pkief.material-icon-theme
+      - gruntfuggly.todo-tree
+      - octref.vetur
+      - dotjoshjohnson.xml
+      - george-alisson.html-preview-vscode
+      - humao.rest-client
+      - ms-azuretools.vscode-docker
+      - tomoki1207.pdf
+      - redhat.ansible

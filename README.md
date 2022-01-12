@@ -40,7 +40,6 @@ gnome-language-selector
 
 # plugins
 ## TODO: [] browser-plugins (brave, firefox)
-## TODO: [] vscode-plugins
 
 # misc
 ## TODO: [] restore rsync backups

@@ -32,6 +32,9 @@
 - name: install vscode
   import_playbook: install-vscode-snapd.yml  
 
+- name: install-vscode-extensions
+  import_playbook: install-vscode-extensions.yml  
+
 - name: install postman
   import_playbook: install-postman-snapd.yml    
 
@@ -71,5 +74,5 @@
 - name: install chromium-browser
   import_playbook: install-chromium-browser.yml   
 
-- name: install python3-pip.yml
+- name: install python3-pip
   import_playbook: install-python3-pip.yml
