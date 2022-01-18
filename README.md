@@ -37,6 +37,7 @@ gnome-language-selector
 
 # packages
 ## TODO: [] install vivaldi
+## TODO: [] install mulvad
 
 # plugins
 ## TODO: [] browser-plugins (brave, firefox)
