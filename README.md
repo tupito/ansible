@@ -35,10 +35,13 @@ gnome-language-selector
 ## TODO: [] OS settings: settings -> desktop -> dock -> intelligently hide
 ## TODO: [] OS settings: settings -> desktop -> background
 
+## TODO: [] ssh-copy-id
+
 # packages
 ## TODO: [] install sshfs
 ## TODO: [] install vivaldi
 ## TODO: [] install mulvad
+## TODO: [] install vlc (apt)
 
 # plugins
 ## TODO: [] browser-plugins (brave, firefox)
