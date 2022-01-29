@@ -36,6 +36,7 @@ gnome-language-selector
 ## TODO: [] OS settings: settings -> desktop -> background
 
 # packages
+## TODO: [] install sshfs
 ## TODO: [] install vivaldi
 ## TODO: [] install mulvad
 
