@@ -27,6 +27,16 @@ gnome-language-selector
 30.12.2021
 
 ```bash
+## TODO: [] vscode-confs: editorBracketPairColorization.enabled: true ...
+```bash
+#.vscode/settings.json
+{ 
+    "editor.bracketPairColorization.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+}
+```
 # OS-installation:
 ## TODO: [] fix umask values, https://www.computernetworkingnotes.com/linux-tutorials/how-to-change-default-umask-permission-in-linux.html
 ## TODO: [] Repair boot-boader, check dualboot links
@@ -39,12 +49,15 @@ gnome-language-selector
 
 # packages
 ## TODO: [] install sshfs
-## TODO: [] install vivaldi
+## TODO: [] install vivaldi, ungoogled chromium, librewolf
 ## TODO: [] install mulvad
 ## TODO: [] install vlc (apt)
+## TODO: [] apt install libnotify-bin
+## TODO: [] apt install p7zip-full p7zip-rar
+## TODO: [] unattended-upgrade, security
 
 # plugins
-## TODO: [] browser-plugins (brave, firefox)
+## TODO: [] browser-plugins (brave, firefox), bitwarden, privacy badger, uBlock origin, I don't care about cookies
 
 # misc
 ## TODO: [] restore rsync backups

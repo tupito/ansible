@@ -12,4 +12,7 @@
   import_playbook: hostname.yml    
 
 - name: remove obsolete packages
-  import_playbook: remove-obsole-packages.yml  
+  import_playbook: remove-obsole-packages.yml
+
+- name: lynis hardening
+  import_playbook: lynis-hardening.yml    
