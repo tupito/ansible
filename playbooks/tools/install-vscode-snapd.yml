@@ -12,3 +12,33 @@
     snap: # https://docs.ansible.com/ansible/2.9_ja/modules/snap_module.html
       name: code
       classic: yes
+
+  - name: Install extensions "code --install-extension <id>" #FIXME: not idempotent
+    command: code --install-extension {{ item }}
+    loop:
+      - eamodio.gitlens
+      - mechatroner.rainbow-csv
+      - ms-python.python      
+      - ms-python.vscode-pylance
+      - ms-toolsai.jupyter
+      - ms-vscode.powershell
+      - ms-vscode-remote.remote-wsl      
+      - dbaeumer.vscode-eslint
+      - esbenp.prettier-vscode
+      - pkief.material-icon-theme
+      - gruntfuggly.todo-tree
+      - dotjoshjohnson.xml
+      - george-alisson.html-preview-vscode
+      - humao.rest-client
+      - ms-azuretools.vscode-docker
+      - tomoki1207.pdf
+      - redhat.ansible
+      - vue.volar # 2022/5, vue3
+      - formulahendry.auto-rename-tag # 2022/3
+      - sdras.night-owl # 2022/3 theme
+
+  - name: setup settings.json
+    copy:
+      src: ./vscode-settings.json
+      dest: ~/.config/Code/User/settings.json
+      mode: '0644'      

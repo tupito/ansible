@@ -32,9 +32,6 @@
 - name: install vscode
   import_playbook: install-vscode-snapd.yml  
 
-- name: install-vscode-extensions
-  import_playbook: install-vscode-extensions.yml  
-
 - name: install postman
   import_playbook: install-postman-snapd.yml    
 
@@ -86,4 +83,5 @@
 - name: install libnotify-bin
   import_playbook: install-libnotify-bin.yml 
 
-  
+- name: install p7zip
+  import_playbook: install-p7zip.yml 

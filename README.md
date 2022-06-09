@@ -30,19 +30,6 @@ gnome-language-selector
 * [] var: email? (gitconfig, aanywhere else?) #TODO
 * [] create_ssh_key_only_if_doesnt_exist #TODO
 * [] var: ssh key comment #TODO
-
-* [] template: .vscode/settings.json #TODO
-
-    ```bash
-    #.vscode/settings.json
-    { 
-        "editor.bracketPairColorization.enabled": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        },
-    }
-    ```
-* [] apt install p7zip-full p7zip-rar #TODO
 * [] install slack #TODO
 
 ### maybe someday, notepool

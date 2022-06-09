@@ -1,0 +1,8 @@
+{
+ "workbench.iconTheme": "material-icon-theme",
+ "workbench.colorTheme": "Night Owl",
+ "editor.bracketPairColorization.enabled": true,
+ "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+ },
+}
