@@ -30,9 +30,6 @@ gnome-language-selector
 ### bef 22.04 installation
 9.6.2022
 
-* [] var: hostname (stop if null) #TODO
-* [] var: email? (gitconfig, aanywhere else?) #TODO
-* [] create_ssh_key_only_if_doesnt_exist #TODO
 * [] var: ssh key comment #TODO
 
 ### maybe someday, notepool

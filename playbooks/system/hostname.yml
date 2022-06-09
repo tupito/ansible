@@ -8,7 +8,7 @@
   
   tasks:
 
-  - name: assert vars
+  - name: assert my_hostname
     assert:
       that:
         - my_hostname != 'default'

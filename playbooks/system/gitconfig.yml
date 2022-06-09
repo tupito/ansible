@@ -4,16 +4,34 @@
 
 - name: Setup ~/.gitconfig
   hosts: localhost
+  vars:
+    - my_email: default
+    - my_name: default
+
   tasks:
+
+  - name: assert my_email
+    assert:
+      that:
+        - my_email != 'default'
+      fail_msg: "'my_email' should not be 'default'"
+      success_msg: "my_email ok, continue"
+      
+  - name: assert my_name
+    assert:
+      that:
+        - my_name != 'default'
+      fail_msg: "'my_name' should not be 'default'"
+      success_msg: "my_name ok, continue"    
 
   - name: setup .gitconfig user.email 
     git_config: # https://docs.ansible.com/ansible/2.3/git_config_module.html
       name: user.email
-      value: "tomi.tupiini@gmail.com"
+      value: "{{ my_email }}"
       scope: global
     
   - name: setup .gitconfig user.name 
     git_config:
       name: user.name
-      value: "Tomi Tupiini"
+      value: "{{ my_name }}"
       scope: global    
