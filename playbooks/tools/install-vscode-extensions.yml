@@ -27,6 +27,6 @@
       - ms-azuretools.vscode-docker
       - tomoki1207.pdf
       - redhat.ansible
-      - johnsoncodehk.volar # 2022/3, vue3
+      - vue.volar # 2022/5, vue3
       - formulahendry.auto-rename-tag # 2022/3
       - sdras.night-owl # 2022/3 theme
