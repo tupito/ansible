@@ -23,60 +23,66 @@ gnome-language-selector
 ```
 
 ## todos
+### bef 22.04 installation
+9.6.2022
 
-30.12.2021
+* [] var: hostname (stop if null) #TODO
+* [] var: email? (gitconfig, aanywhere else?) #TODO
+* [] create_ssh_key_only_if_doesnt_exist #TODO
+* [] var: ssh key comment #TODO
 
-```bash
-## TODO: [] vscode-confs: editorBracketPairColorization.enabled: true ...
-```bash
-#.vscode/settings.json
-{ 
-    "editor.bracketPairColorization.enabled": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
-}
+* [] template: .vscode/settings.json #TODO
+
+    ```bash
+    #.vscode/settings.json
+    { 
+        "editor.bracketPairColorization.enabled": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+    }
+    ```
+* [] install sshfs #TODO
+* [] install vlc (apt) #TODO
+* [] apt install libnotify-bin #TODO
+* [] apt install p7zip-full p7zip-rar #TODO
+* [] install slack #TODO
+
+### maybe someday, notepool
+9.6.2022
+
 ```
-# OS-installation:
-## TODO: [] fix umask values, https://www.computernetworkingnotes.com/linux-tutorials/how-to-change-default-umask-permission-in-linux.html
-## TODO: [] Repair boot-boader, check dualboot links
-## TODO: [] OS settings: settings -> desktop -> general -> show maximize button
-## TODO: [] OS settings: settings -> desktop -> dock -> dock size small
-## TODO: [] OS settings: settings -> desktop -> dock -> intelligently hide
-## TODO: [] OS settings: settings -> desktop -> background
+# plugins
+* [] browser-plugins (brave, firefox), bitwarden, privacy badger, uBlock origin, I don't care about cookies
 
-## TODO: [] ssh-copy-id
+
+* [] hardening: fix umask values, https://www.computernetworkingnotes.com/linux-tutorials/how-to-change-default-umask-permission-in-linux.html
+* [] OS settings: settings -> desktop -> background
+* [] ssh-copy-id
 
 # packages
-## TODO: [] install sshfs
-## TODO: [] install vivaldi, ungoogled chromium, librewolf
-## TODO: [] install mulvad
-## TODO: [] install vlc (apt)
-## TODO: [] apt install libnotify-bin
-## TODO: [] apt install p7zip-full p7zip-rar
-## TODO: [] unattended-upgrade, security
-
-# plugins
-## TODO: [] browser-plugins (brave, firefox), bitwarden, privacy badger, uBlock origin, I don't care about cookies
+* [] install vivaldi, ungoogled chromium, librewolf
+* [] install mulvad
+* [] unattended-upgrade, security
 
 # misc
-## TODO: [] restore rsync backups
-## TODO: [] authorize github access key
+* [] restore rsync backups
+* [] authorize github access key
 
 # optimization/refactoring:
-## TODO: [] refactor all apt installs in one module call
-## TODO: [] refactor all snap installs in one module call
-## TODO: [] refactor all tasks to "ensure something..." form
+* [] refactor all apt installs in one module call
+* [] refactor all snap installs in one module call
+* [] refactor all tasks to "ensure something..." form
 
 # longterm
-## TODO: [] refactor to ansible role
-## TODO: [] vars: hostname, ssh-key comment, gitconfig, create_ssh_key_only_if_doesnt_exist
-## TODO: [] tests for configurations
-## TODO: [] solve last modified date issue with git + rsync-backups
+* [] refactor to ansible role
+* [] tests for configurations
+* [] solve last modified date issue with git + rsync-backups
 
-# NOT GOING TO FIX:
-## gnome-language-selector
 ```
+
+### not going to fix
+* gnome-language-selectro
 
 ## dual boot
 
