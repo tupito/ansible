@@ -1,4 +1,7 @@
 ---
+- name: set hostname
+  import_playbook: hostname.yml
+
 - name: setup ufw
   import_playbook: ufw.yml
 
@@ -7,9 +10,6 @@
 
 - name: setup .gitconfig
   import_playbook: gitconfig.yml
-
-- name: set hostname
-  import_playbook: hostname.yml    
 
 - name: remove obsolete packages
   import_playbook: remove-obsole-packages.yml

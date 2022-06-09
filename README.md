@@ -4,6 +4,10 @@
 
 Some personal default routines after fresh Pop!_OS 21.04/21.10 installation
 
+required custom vars:
+* my_hostname
+
+
 ## usage 
 
 30.12.2021
@@ -35,10 +39,7 @@ gnome-language-selector
 9.6.2022
 
 ```
-# plugins
 * [] browser-plugins (brave, firefox), bitwarden, privacy badger, uBlock origin, I don't care about cookies
-
-
 * [] hardening: fix umask values, https://www.computernetworkingnotes.com/linux-tutorials/how-to-change-default-umask-permission-in-linux.html
 * [] OS settings: settings -> desktop -> background
 * [] ssh-copy-id
