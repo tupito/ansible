@@ -30,7 +30,6 @@ gnome-language-selector
 * [] var: email? (gitconfig, aanywhere else?) #TODO
 * [] create_ssh_key_only_if_doesnt_exist #TODO
 * [] var: ssh key comment #TODO
-* [] install slack #TODO
 
 ### maybe someday, notepool
 9.6.2022

@@ -1,0 +1,13 @@
+# 20220609
+# tested, working: popos 21.10
+---
+
+- name: Install slack (apt)
+  hosts: localhost
+  tasks:
+
+  - name: Ensure latest slack (apt) installed
+    apt:
+      name: slack
+      state: latest
+    become: true

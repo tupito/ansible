@@ -85,3 +85,6 @@
 
 - name: install p7zip
   import_playbook: install-p7zip.yml 
+
+- name: install slack
+  import_playbook: install-slack.yml   
