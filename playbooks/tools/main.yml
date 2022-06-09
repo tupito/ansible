@@ -69,13 +69,21 @@
   import_playbook: install-npm.yml  
 
 - name: install chromium-browser
-  import_playbook: install-chromium-browser.yml
-
-- name: install chromium-browser
-  import_playbook: install-chromium-browser.yml   
+  import_playbook: install-chromium-browser.yml 
 
 - name: install python3-pip
   import_playbook: install-python3-pip.yml
 
 - name: install fzf (command line fuzzy finder)
   import_playbook: install-fzf.yml
+
+- name: install sshfs
+  import_playbook: install-sshfs.yml
+
+- name: install vlc
+  import_playbook: install-vlc.yml 
+
+- name: install libnotify-bin
+  import_playbook: install-libnotify-bin.yml 
+
+  

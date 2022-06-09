@@ -42,9 +42,6 @@ gnome-language-selector
         },
     }
     ```
-* [] install sshfs #TODO
-* [] install vlc (apt) #TODO
-* [] apt install libnotify-bin #TODO
 * [] apt install p7zip-full p7zip-rar #TODO
 * [] install slack #TODO
 

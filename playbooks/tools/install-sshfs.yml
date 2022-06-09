@@ -1,0 +1,13 @@
+# 20220609
+# tested, working: popos 21.10
+---
+
+- name: Install sshfs (apt)
+  hosts: localhost
+  tasks:
+
+  - name: Ensure latest sshfs (apt) is installed
+    apt:
+      name: sshfs
+      state: latest
+    become: true
