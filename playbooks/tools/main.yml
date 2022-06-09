@@ -76,3 +76,6 @@
 
 - name: install python3-pip
   import_playbook: install-python3-pip.yml
+
+- name: install fzf (command line fuzzy finder)
+  import_playbook: install-fzf.yml
