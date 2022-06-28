@@ -45,6 +45,7 @@ gnome-language-selector
 * [] install vivaldi, ungoogled chromium, librewolf
 * [] install mulvad
 * [] unattended-upgrade, security
+* [] slack
 
 # misc
 * [] restore rsync backups
