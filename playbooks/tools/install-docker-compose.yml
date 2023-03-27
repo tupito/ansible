@@ -10,7 +10,7 @@
   - name: get docker-compose from github
     become: true
     get_url:
-      url: https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-linux-x86_64
+      url: https://github.com/docker/compose/releases/download/v2.17.2/docker-compose-linux-x86_64 #20230327
       dest: /usr/local/bin/docker-compose
       mode: '0755'
 
