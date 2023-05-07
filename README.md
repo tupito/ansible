@@ -21,9 +21,6 @@ git clone https://github.com/tupito/ansible
 
 # run all playbooks on localhost with sudo
 ansible-playbook ./playbooks/main.yml --ask-become-pass
-
-# fix locales manually (pop os uses gnome at this point)
-gnome-language-selector
 ```
 
 ## todos

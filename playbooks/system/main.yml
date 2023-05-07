@@ -12,7 +12,7 @@
   import_playbook: update.yml
 
 - name: remove obsolete packages
-  import_playbook: remove-obsole-packages.yml
+  import_playbook: remove-obsolete-packages.yml
 
 - name: lynis hardening
   import_playbook: lynis-hardening.yml    
