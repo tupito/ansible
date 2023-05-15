@@ -1,0 +1,28 @@
+---
+
+- import_tasks: remove-obsolete-gnome-packages.yml
+
+- name: Ensure packages installed
+  become: true
+  package:
+    name: "{{ item }}"
+    state: latest
+  loop:
+    - terminator
+    - duplicity
+    - vlc
+    - vim
+    - tree
+    - tldr
+    - snapd
+    - htop
+    - keepassxc
+    - npm
+    - p7zip-full
+    - p7zip-rar
+    - sshfs
+    - python3-pip
+    - fzf
+    - chromium-browser
+    - virtualbox
+    - slack

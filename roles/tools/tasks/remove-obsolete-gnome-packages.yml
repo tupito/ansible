@@ -1,0 +1,11 @@
+---
+- name: Remove obsolete gnome packages (apt)
+  become: true
+  package:
+    name: "{{ item }}"
+    state: absent
+  loop:
+    - geary
+    - gnome-contacts
+    - gnome-weather
+    - gnome-calendar

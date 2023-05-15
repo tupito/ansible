@@ -14,41 +14,14 @@
 - name: install neofetch
   import_playbook: install-neofetch.yml
 
-- name: install tldr
-  import_playbook: install-tldr.yml
-
-- name: install vim
-  import_playbook: install-vim.yml
-
 - name: generate ssh-key (doesn't overwrite if exists)
   import_playbook: generate-ssh-key.yml    
-
-- name: install tmux
-  import_playbook: install-tmux.yml
-
-- name: install snapd
-  import_playbook: install-snapd.yml
 
 - name: install vscode
   import_playbook: install-vscode-snapd.yml  
 
 - name: install postman
-  import_playbook: install-postman-snapd.yml    
-
-- name: install keepassxc
-  import_playbook: install-keepassxc.yml
-
-- name: install terminator
-  import_playbook: install-terminator.yml   
-
-- name: install htop
-  import_playbook: install-htop.yml     
-
-- name: install duplicity
-  import_playbook: install-duplicity.yml
-
-- name: install tree
-  import_playbook: install-tree.yml
+  import_playbook: install-postman-snapd.yml
 
 - name: install brave-browser
   import_playbook: install-brave-browser.yml
@@ -58,33 +31,3 @@
 
 - name: install docker-compose
   import_playbook: install-docker-compose.yml  
-
-- name: install virtualbox
-  import_playbook: install-virtualbox.yml
-
-- name: install npm
-  import_playbook: install-npm.yml  
-
-- name: install chromium-browser
-  import_playbook: install-chromium-browser.yml 
-
-- name: install python3-pip
-  import_playbook: install-python3-pip.yml
-
-- name: install fzf (command line fuzzy finder)
-  import_playbook: install-fzf.yml
-
-- name: install sshfs
-  import_playbook: install-sshfs.yml
-
-- name: install vlc
-  import_playbook: install-vlc.yml 
-
-- name: install libnotify-bin
-  import_playbook: install-libnotify-bin.yml 
-
-- name: install p7zip
-  import_playbook: install-p7zip.yml 
-
-- name: install slack
-  import_playbook: install-slack.yml   

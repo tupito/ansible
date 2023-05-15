@@ -8,6 +8,12 @@ required custom vars:
 * my_hostname
 
 
+
+```bash
+# 15.5.2023
+ansible-playbook run-localhost.yml --ask-become-pass
+```
+
 ## usage 
 
 30.12.2021
