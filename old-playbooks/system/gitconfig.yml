@@ -5,8 +5,8 @@
 - name: Setup ~/.gitconfig
   hosts: localhost
   vars:
-    - my_email: default
-    - my_name: default
+    - my_email: tomi.tupiini@seamk.fi
+    - my_name: Tomi Tupiini
 
   tasks:
 
