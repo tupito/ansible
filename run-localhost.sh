@@ -1,0 +1,1 @@
+ansible-playbook run-localhost.yml --ask-become-pass 2>&1 | tee "logs/$(date +%Y%m%d-%H%M%S)-run-localhost.log"
