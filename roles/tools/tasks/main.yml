@@ -1,5 +1,6 @@
 ---
 
+- import_tasks: install-ms-edge-debian.yml
 - import_tasks: remove-obsolete-gnome-packages.yml
 
 - name: Ensure packages installed
