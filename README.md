@@ -36,7 +36,6 @@ git clone https://github.com/tupito/ansible
 * [] install vivaldi, ungoogled chromium, librewolf
 * [] install mulvad
 * [] unattended-upgrade, security
-* [] slack
 
 ### misc
 * [] restore rsync backups
