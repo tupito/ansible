@@ -4,7 +4,7 @@
 - name: Set a hostname
   hosts: localhost
   vars:
-    - my_hostname: popos2204w
+    - my_hostname: default
   
   tasks:
 
