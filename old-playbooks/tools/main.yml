@@ -17,9 +17,6 @@
 - name: generate ssh-key (doesn't overwrite if exists)
   import_playbook: generate-ssh-key.yml    
 
-- name: install vscode
-  import_playbook: install-vscode-snapd.yml  
-
 - name: install postman
   import_playbook: install-postman-snapd.yml
 

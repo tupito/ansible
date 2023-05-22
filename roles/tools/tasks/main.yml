@@ -1,9 +1,6 @@
 ---
 
-- import_tasks: install-ms-edge-debian.yml
-- import_tasks: install-qemu-kvm-virt-manager.yml
-- import_tasks: install-slack.yml
-- import_tasks: remove-obsolete-gnome-packages.yml
+
 
 - name: Ensure packages installed
   become: true
@@ -28,5 +25,10 @@
     - fzf
     - chromium-browser
     - virtualbox
-    - slack
     - remmina
+
+- import_tasks: install-vscode.yml
+- import_tasks: install-ms-edge-debian.yml
+- import_tasks: install-qemu-kvm-virt-manager.yml
+- import_tasks: remove-obsolete-gnome-packages.yml
+- import_tasks: install-slack.yml
