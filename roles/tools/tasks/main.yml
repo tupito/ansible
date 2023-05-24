@@ -1,7 +1,4 @@
 ---
-
-
-
 - name: Ensure packages installed
   become: true
   package:
@@ -27,6 +24,7 @@
     - virtualbox
     - remmina
 
+- import_tasks: install-drawio.yml
 - import_tasks: install-vscode.yml
 - import_tasks: install-ms-edge-debian.yml
 - import_tasks: install-qemu-kvm-virt-manager.yml
