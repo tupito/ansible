@@ -26,6 +26,7 @@
     - chromium-browser
     - virtualbox
     - remmina
+    - calibre
 
 - import_tasks: install-vscode.yml
 - import_tasks: install-ms-edge-debian.yml
