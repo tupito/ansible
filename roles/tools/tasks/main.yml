@@ -21,7 +21,6 @@
     - python3-pip
     - fzf
     - chromium-browser
-    - virtualbox
     - remmina
     - calibre
     - flameshot
