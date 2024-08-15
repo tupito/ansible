@@ -4,6 +4,3 @@
 
 - name: setup .gitconfig
   import_playbook: gitconfig.yml
-
-- name: lynis hardening
-  import_playbook: lynis-hardening.yml

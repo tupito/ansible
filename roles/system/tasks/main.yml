@@ -1,3 +1,4 @@
 ---
 - import_tasks: ufw.yml
 - import_tasks: apt-update.yml
+- import_tasks: lynis-hardening.yml
