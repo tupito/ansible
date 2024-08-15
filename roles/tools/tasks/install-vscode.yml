@@ -29,6 +29,7 @@
     - vue.volar # 2022/5, vue3
     - formulahendry.auto-rename-tag # 2022/3
     - sdras.night-owl # 2022/3 theme
+    - github.copilot
 
 - name: setup settings.json
   copy:
