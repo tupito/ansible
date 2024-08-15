@@ -1,5 +1,7 @@
 #20211012
 
+# TODO: to role with vars
+
 ---
 
 - name: Setup ~/.gitconfig

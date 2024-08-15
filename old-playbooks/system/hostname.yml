@@ -1,4 +1,6 @@
 # 20220609
+
+# TODO: to role with vars
 ---
 
 - name: Set a hostname

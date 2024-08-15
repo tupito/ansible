@@ -1,6 +1,8 @@
 # 20211010
 # tested popos21.04
 
+# TODO: to role with vars
+
 ---
 
 - name: Generate SSH-key
