@@ -27,7 +27,8 @@
 
 - import_tasks: install-drawio.yml
 - import_tasks: install-vscode.yml
-- import_tasks: install-ms-edge-debian.yml
+#- import_tasks: install-ms-edge-debian.yml     # FIXME: doesn't work 15.8.2024, installed manually from https://www.microsoft.com/en-us/edge/business/download?form=MA13H4
 - import_tasks: install-qemu-kvm-virt-manager.yml
 - import_tasks: remove-obsolete-gnome-packages.yml
 - import_tasks: install-slack.yml
+- import_tasks: install-brave-browser.yml
