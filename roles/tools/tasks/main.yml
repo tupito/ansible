@@ -32,3 +32,4 @@
 - import_tasks: remove-obsolete-gnome-packages.yml
 - import_tasks: install-slack.yml
 - import_tasks: install-brave-browser.yml
+- import_tasks: install-cheat.yml
