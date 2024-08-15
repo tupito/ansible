@@ -10,6 +10,12 @@
       - virt-manager
     state: latest
 
+- name: Ensure libvirt group exists
+  become: true
+  group:
+    name: libvirt
+    state: present    
+
 - name: Add current user to libvirt group
   become: true
   user:
