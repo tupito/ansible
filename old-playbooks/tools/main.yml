@@ -8,9 +8,3 @@
 
 - name: install postman
   import_playbook: install-postman-snapd.yml
-
-- name: install docker-ce
-  import_playbook: install-docker-ce.yml
-
-- name: install docker-compose
-  import_playbook: install-docker-compose.yml  
