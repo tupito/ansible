@@ -1,0 +1,15 @@
+---
+- name: install bat
+  apt:
+    name: bat
+    state: latest
+  become: true
+
+- name: create a symbolic link so can be runned as "bat" instead of "batcat"
+  file:
+    src: /usr/bin/batcat
+    dest: /usr/local/bin/bat
+    owner: root
+    group: root
+    state: link
+  become: true

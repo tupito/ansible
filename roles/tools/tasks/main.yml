@@ -10,7 +10,7 @@
     - vlc
     - vim
     - tree
-    - tldr
+    - tldr  # update local cache: tldr -u (manual)
     - snapd
     - htop
     - keepassxc
@@ -34,3 +34,4 @@
 - import_tasks: install-brave-browser.yml
 - import_tasks: install-cheat.yml
 - import_tasks: install-keychain.yml
+- import_tasks: install-bat.yml
