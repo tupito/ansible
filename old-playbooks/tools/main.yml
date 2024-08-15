@@ -1,8 +1,5 @@
 ---
 
-- name: install fish
-  import_playbook: install-fish.yml
-
 - name: generate ssh-key (doesn't overwrite if exists)
   import_playbook: generate-ssh-key.yml    
 

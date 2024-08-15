@@ -37,3 +37,4 @@
 - import_tasks: install-bat.yml
 - import_tasks: install-neofetch.yml
 - import_tasks: install-docker-ce.yml
+- import_tasks: install-fish.yml
