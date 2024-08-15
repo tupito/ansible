@@ -4,6 +4,3 @@
 
 - name: install tools
   import_playbook: tools/main.yml
-
-- name: additional info
-  import_playbook: info-todo.yml  

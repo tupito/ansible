@@ -4,3 +4,6 @@
 
 - name: setup .gitconfig
   import_playbook: gitconfig.yml
+
+- name: generate ssh-key (doesn't overwrite if exists)
+  import_playbook: generate-ssh-key.yml
