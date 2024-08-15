@@ -1,27 +1,23 @@
 ---
-- name: Install apt-transport-https
+- name: ensure Microsoft Edge GPG key added
   become: true
-  ansible.builtin.apt:
-    name: apt-transport-https
-    state: latest
-    update_cache: true
-
-- name: Add apt signing key
-  become: true
-  ansible.builtin.apt_key:
-    url: "https://packages.microsoft.com/keys/microsoft.asc"
+  apt_key:
+    url: https://packages.microsoft.com/keys/microsoft.asc
     state: present
 
-- name: Add repository into sources list
-  become: true
-  ansible.builtin.apt_repository:
-    repo: deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main
+- name: ensure Microsoft repository added
+  become: true  
+  apt_repository:
+    repo: "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"
     state: present
-    filename: microsoft-edge
 
-- name: Install microsoft-edge-stable
+- name: Update apt cache
   become: true
-  ansible.builtin.apt:
-    name: "microsoft-edge-stable"
-    state: latest
-    update_cache: true
+  apt:
+    update_cache: yes
+
+- name: ensure microsoft-edge-stable installed
+  become: true
+  apt:
+    name: microsoft-edge-stable
+    state: present
