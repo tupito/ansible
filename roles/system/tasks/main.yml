@@ -1,5 +1,3 @@
 ---
-- name: ensure ufw enabled
-  ufw:
-    state: enabled
-  become: yes
+- import_tasks: ufw.yml
+- import_tasks: apt-update.yml

@@ -3,10 +3,7 @@
   import_playbook: hostname.yml
 
 - name: setup .gitconfig
-  import_playbook: gitconfig.yml  
-
-- name: update packages
-  import_playbook: update.yml
+  import_playbook: gitconfig.yml
 
 - name: lynis hardening
-  import_playbook: lynis-hardening.yml    
+  import_playbook: lynis-hardening.yml

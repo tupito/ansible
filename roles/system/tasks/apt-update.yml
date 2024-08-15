@@ -1,0 +1,11 @@
+---
+- name: Update package lists "sudo apt update"
+  become: true
+  apt:
+    update_cache: yes
+
+- name: Update all packages to their latest version "sudo apt upgrade"
+  become: true
+  apt:
+    name: "*"
+    state: latest

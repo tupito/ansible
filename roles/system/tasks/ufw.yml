@@ -1,0 +1,5 @@
+---
+- name: ensure ufw enabled
+  ufw:
+    state: enabled
+  become: true
