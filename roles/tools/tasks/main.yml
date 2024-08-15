@@ -33,3 +33,4 @@
 - import_tasks: install-slack.yml
 - import_tasks: install-brave-browser.yml
 - import_tasks: install-cheat.yml
+- import_tasks: install-keychain.yml
