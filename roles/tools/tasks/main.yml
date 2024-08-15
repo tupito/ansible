@@ -35,3 +35,4 @@
 - import_tasks: install-cheat.yml
 - import_tasks: install-keychain.yml
 - import_tasks: install-bat.yml
+- import_tasks: install-neofetch.yml

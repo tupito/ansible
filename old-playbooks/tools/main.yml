@@ -3,17 +3,11 @@
 - name: install fish
   import_playbook: install-fish.yml
 
-- name: install neofetch
-  import_playbook: install-neofetch.yml
-
 - name: generate ssh-key (doesn't overwrite if exists)
   import_playbook: generate-ssh-key.yml    
 
 - name: install postman
   import_playbook: install-postman-snapd.yml
-
-- name: install brave-browser
-  import_playbook: install-brave-browser.yml
 
 - name: install docker-ce
   import_playbook: install-docker-ce.yml
