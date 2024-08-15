@@ -20,7 +20,7 @@
     - sshfs
     - python3-pip
     - fzf
-    - chromium-browser
+    - chromium-browser # TODO: plugins: bitwarden, privacy badger, uBlock origin, I don't care about cookies
     - remmina
     - calibre
     - flameshot

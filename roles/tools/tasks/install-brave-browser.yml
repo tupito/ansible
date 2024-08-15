@@ -1,4 +1,6 @@
 ---
+# TODO: plugins: bitwarden, privacy badger, uBlock origin, I don't care about cookies
+
 - name: ensure apt-transport-https and curl latest versions installed
   become: true  
   apt:
@@ -28,5 +30,3 @@
     name: brave-browser
     state: latest
     update_cache: true
-
-#TODO: install extensions
