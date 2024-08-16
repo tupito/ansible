@@ -1,7 +1,4 @@
 ---
-- name: set hostname
-  import_playbook: hostname.yml
-
 - name: setup .gitconfig
   import_playbook: gitconfig.yml
 

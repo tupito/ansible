@@ -3,5 +3,8 @@
   connection: local
   gather_facts: true
   roles: 
-    - tools
-    - system
+    - role: tools
+    - role: system
+#    - role: hostname
+#      vars: 
+#        my_hostname: "CHANGE-ME"
