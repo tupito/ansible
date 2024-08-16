@@ -8,3 +8,8 @@
 #    - role: hostname
 #      vars: 
 #        my_hostname: "CHANGE-ME"
+#    - role: gitconfig
+#      vars: 
+#        my_email: "CHANGE-ME"
+#        my_name: "CHANGE-ME"
+#        default_branch: "main"

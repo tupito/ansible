@@ -2,10 +2,11 @@
 
 Some personal default routines after fresh Pop!_OS 22.04 installation
 
-## setup before running
+## setup ./run-localhost.yml before running
 16.8.2024
 
-* hostname: `run_localhost.yml` -> uncomment and change `my_hostname`
+* hostname
+* gitconfig
 
 ## run
 

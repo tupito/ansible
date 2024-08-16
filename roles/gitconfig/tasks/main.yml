@@ -1,0 +1,18 @@
+---
+- name: setup .gitconfig user.email 
+  git_config: # https://docs.ansible.com/ansible/2.3/git_config_module.html
+    name: user.email
+    value: "{{ my_email }}"
+    scope: global
+  
+- name: setup .gitconfig user.name 
+  git_config:
+    name: user.name
+    value: "{{ my_name }}"
+    scope: global
+
+- name: setup .gitconfig init.defaultBranch
+  git_config:
+    name: init.defaultBranch
+    value: "{{ default_branch }}"
+    scope: global
