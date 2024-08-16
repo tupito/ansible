@@ -1,0 +1,16 @@
+---
+- name: ensure .ssh directory with correct permissions exists
+  file:
+    path=/home/tt/.ssh
+    state=directory
+    mode=0700
+    owner=tt
+    group=tt
+
+- name: Generate SSH-key (ed25519) if it doesn't exist
+  openssh_keypair: # https://docs.ansible.com/ansible/2.9_ja/modules/openssh_keypair_module.html
+    path: "~/.ssh/{{ssh_key_filename}}"
+    type: ed25519
+    state: present
+    comment: "{{pubkey_comment}}"
+    force: no     # Should the key be regenerated even if it already exists

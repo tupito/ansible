@@ -3,13 +3,20 @@
   connection: local
   gather_facts: true
   roles: 
-    - role: tools
-    - role: system
+#    - role: tools
+#    - role: system
+
 #    - role: hostname
 #      vars: 
 #        my_hostname: "CHANGE-ME"
+
 #    - role: gitconfig
 #      vars: 
 #        my_email: "CHANGE-ME"
 #        my_name: "CHANGE-ME"
 #        default_branch: "main"
+
+#    - role: ssh-key # key will be created ONLY if it doesn't exist
+#      vars: 
+#        ssh_key_filename: id_ed25519
+#        pubkey_comment: user@hostname

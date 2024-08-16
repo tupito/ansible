@@ -2,11 +2,14 @@
 
 Some personal default routines after fresh Pop!_OS 22.04 installation
 
-## setup ./run-localhost.yml before running
+## edit ./run-localhost.yml before running
 16.8.2024
+
+uncomment wanted roles and setup:
 
 * hostname
 * gitconfig
+* ssh-key
 
 ## run
 

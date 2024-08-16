@@ -1,3 +1,0 @@
----
-- name: generate ssh-key (doesn't overwrite if exists)
-  import_playbook: generate-ssh-key.yml
