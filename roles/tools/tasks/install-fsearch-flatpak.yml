@@ -1,0 +1,3 @@
+- name: Install fsearch from Flathub
+  become: true
+  command: flatpak install -y io.github.cboxdoerfer.FSearch
