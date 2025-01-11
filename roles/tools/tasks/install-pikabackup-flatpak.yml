@@ -1,0 +1,3 @@
+- name: Install PikaBackup from Flathub
+  become: true
+  command: flatpak install flathub org.gnome.World.PikaBackup

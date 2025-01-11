@@ -40,3 +40,4 @@
 - import_tasks: install-fish.yml
 - import_tasks: install-postman-snapd.yml
 - import_tasks: install-fsearch-flatpak.yml
+- import_tasks: install-pikabackup-flatpak.yml

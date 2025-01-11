@@ -1,3 +1,4 @@
 tmp*
 vagrants/.vagrant
 logs
+.vscode
