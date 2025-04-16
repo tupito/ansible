@@ -21,3 +21,10 @@ git clone https://github.com/tupito/ansible
 # run roles for localhost
 ./run-localhost.sh
 ```
+
+## TODO
+
+```bash
+/etc/apt/apt.conf.d/99nocache
+  APT::Keep-Downloaded-Packages "false";
+```
