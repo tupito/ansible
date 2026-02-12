@@ -1,5 +1,0 @@
----
-- name: Install drawio
-  become: true
-  snap:
-    name: drawio
