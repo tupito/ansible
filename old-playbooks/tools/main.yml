@@ -1,7 +1,4 @@
 ---
-- name: install bat
-  import_playbook: install-bat.yml
-
 - name: install cheat
   import_playbook: install-cheat.yml
 
